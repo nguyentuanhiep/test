@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+           
+            <br><br>
+            <video id="video" width="420">
+              <source src="abc.mp4" type="video/mp4">     
+            </video>
+          </div>
+
+          <script> 
+            var myVideo = document.getElementById("video"); 
+            
+            function playPause() { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+            } 
+            
+            
+            </script> 
+    </body>
+</html>
